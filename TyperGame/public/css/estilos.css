@@ -1,3 +1,6 @@
+.body{
+  overflow: scroll;
+}
 .campo-desativado{
   background-color: #bbb;
 }
@@ -23,4 +26,7 @@
 
 .campoVerde{
   border: green 3px solid;
+}
+.placar{
+  display: none;
 }

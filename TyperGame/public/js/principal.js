@@ -15,7 +15,6 @@ function initFraseTamanho() {
   tamanho     = tamanho.length;
 
   $("#palavras").text(tamanho+" palavras");
-  console.log(tamanho);
 }
 //###### Obtendo o campo de digitação e alterando automaticamente o placar. #####
 function initContador() {
@@ -40,7 +39,6 @@ function initCronometro(){
           gameOver();
         }
       },1000);
-      console.log(tempo);
     });
   }
 //#### Reinicio ####
@@ -68,8 +66,6 @@ function initMarcador () {
       campo.addClass("campoVermelho");
       campo.removeClass("campoVerde");
     }
-    console.log(digitado);
-    console.log(verifica);
   });
 }
 
@@ -79,6 +75,4 @@ function gameOver() {
   campo.attr("disabled",true);
   campo.toggleClass("campo-desativado");
   initPlacar();
-  alert("Fim de jogo");
-
 }
