@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Typer Game</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="center">Typer Game</h1>
+    <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    </p>
+
+    <ul class="informacoes center">
+      <li>
+        <i class="small material-icons icones">description</i>
+        <span id="palavras">Erro no JavaScript</span>
+      </li>
+      <li>
+        <i class="small material-icons icones">query_builder</i>
+         <span id="tempo">6</span> segundos
+     </li>
+    </ul>
+
+    <textarea class="campoDigitacao" rows="8" cols="40"></textarea>
+    <br>
+    <div class="botoes">
+      <a id="reinicio" class="btn-floating btn-large waves-effect waves-light red">
+        <i class="material-icons">restore</i>
+      </a>
+    </div>
+
+    <ul class=" center">
+      <li id="contador-caracteres">0 Caracteres</li>
+      <li id="contador-palavras">0 Palavras</li>
+    </ul>
+    <section class="placar">
+      <h3 class="center">Placar</h3>
+      <table class="centered bordered">
+        <thead>
+          <th>Nome</th>
+          <th>Num. de palavras</th>
+          <th>Remover</th>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+  </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/principal.js"></script>
+    <script src="js/placar.js"></script>
+</body>
+</html>
