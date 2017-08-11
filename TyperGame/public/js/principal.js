@@ -8,6 +8,12 @@ $(document).ready(()=>{
     initMarcador();
     $("#reinicio").click(initReiniciar);
 });
+//#### atualiza tempo
+function initTempo(tempo) {
+    tempoInicial = tempo;
+    $("#tempo").text(tempo);
+}
+
 //###### Obtendo a frase e alterando as informações. #######
 function initFraseTamanho() {
   let frase   = $(".frase").text();
@@ -28,8 +34,8 @@ function initContador() {
 }
 // ##### inicia Game ####
 function initCronometro(){
-  let tempo = $("#tempo").text();
     campo.one("focus",()=>{
+      let tempo = $("#tempo").text();
       $("#reinicio").attr("disabled",true);
       let cronometroId = setInterval(()=>{
         tempo--;
@@ -55,8 +61,8 @@ function initReiniciar() {
 
 // ### Marcação dos pontos
 function initMarcador () {
-  let frase = $(".frase").text();
   campo.on("input",()=>{
+    let frase = $(".frase").text();
     let digitado = campo.val();
     let verifica = frase.substr(0,digitado.length);
     if(digitado == verifica){
