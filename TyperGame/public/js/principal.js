@@ -7,6 +7,16 @@ $(document).ready(()=>{
     initCronometro();
     initMarcador();
     $("#reinicio").click(initReiniciar);
+    atualizaPlacar();
+
+    $("#usuarios").selectize({
+      create    :true,
+      sortField : 'text'
+    });
+
+    $(".tooltip").tooltipster({
+      trigger: "custom"
+  });
 });
 //#### atualiza tempo
 function initTempo(tempo) {

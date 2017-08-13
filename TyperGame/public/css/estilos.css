@@ -31,6 +31,18 @@
   display: none;
 }
 
+.select-usuarios{
+  display: inline-block;
+}
+
+.selectize-input {
+    width: 150px;
+    vertical-align: middle;
+}
+.selectize-control{
+  width: 150px;
+}
+
 #erro{
   color: red;
   display: none;
@@ -42,4 +54,12 @@
 
 #frase-id{
   width: 40px;
+}
+
+#botao-sync{
+  float: right;
+}
+
+#usuarios{
+  display: block;
 }

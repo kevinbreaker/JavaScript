@@ -3,7 +3,7 @@ $("#botao-fraseId").click(buscaFrase);
 
 function fraseAleatoria() {
   $("#spinner").toggle();
-  $.get("http://localhost:3000/frases",trocaAleatoria)
+  $.get("http://192.168.15.8:3000/frases",trocaAleatoria)
   .fail(()=>{
     $("#erro").toggle();
     setTimeout(()=>{
@@ -32,7 +32,7 @@ function buscaFrase() {
   let dados = {id: fraseId };
   console.log("Enviando: "+fraseId);
 
-  $.get("http://localhost:3000/frases",dados,trocaFrase)
+  $.get("http://192.168.15.8:3000/frases",dados,trocaFrase)
   .fail(()=>{
     $("#erro").toggle();
     setTimeout(()=>{

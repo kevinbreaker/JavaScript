@@ -1,72 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Typer Game</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <title>Alura Typer</title>
+    <!--Import materialize.css-->
     <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <!-- Import Google Material Icons -->
+    <link href="css/libs/google-fonts.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
+
+    <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1 class="center">Typer Game</h1>
-    <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    </p>
-    <div class="center">
-      <p id="erro">Ocorreu um erro, por favor tente novamente!</p>
-      <img src="/img/spinner.gif" alt="Carregamento" id="spinner"/>
-    </div>
-    <ul class="informacoes center">
-      <li>
-        <i class="small material-icons icones">description</i>
-        <span id="palavras">Erro no JavaScript</span>
-      </li>
-      <li>
-        <i class="small material-icons icones">query_builder</i>
-         <span id="tempo">6</span> segundos
-     </li>
-    </ul>
+    <section class="container">
+        <h1 class="center titulo header">Alura typer</h1>
+        <div class="slider">
+            <img src="img/texto.jpg" class="imagem-jogo">
+            <img src="img/slide2.png" class="imagem-jogo">
+            <img src="img/placar.jpg" class="imagem-jogo">
+        </div>
+        <hr>
+        <p class="flow-text center">Teste sua velocidade competindo contra seus amigos!</p>
+        <div class="card">
+           <div class="card-image">
+             <!-- <img src="images/sample-1.jpg"> -->
+           </div>
+           <div class="card-content">
+             <p>Placar dinâmico! Sincronizando com o servidor!</p>
+           </div>
+           <div class="card-action">
+             <a href="principal.html">Experimente agora!</a>
+           </div>
+         </div>
+         <div class="card">
+           <div class="card-image">
+             <!-- <img src="img/sl.jpg"> -->
+           </div>
+           <div class="card-content">
+             <p>Frases aleatórias ou escolha diretamente em qual delas você quer competir!</p>
+           </div>
+           <div class="card-action">
+             <a href="principal.html">Experimente agora!</a>
+           </div>
+         </div>
 
-    <textarea class="campoDigitacao" rows="8" cols="40"></textarea>
-    <br>
-    <div class="botoes">
-      <a id="reinicio" class="btn-floating btn-large waves-effect waves-light red">
-        <i class="material-icons">restore</i>
-      </a>
-      <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green">
-        <i class="material-icons">assignment</i>
-      </a>
-      <a id="botao-frase" class="btn-floating btn-large waves-effect waves-light blue">
-        <i class="material-icons">shuffle</i>
-      </a>
-      <a id="botao-fraseId" class="btn-floating btn-large waves-effect waves-light cyan">
-        <i class="material-icons">repeat_one</i>
-      </a>
-      <input type="number" min="0" id="frase-id" />
-    </div>
+         <a class="waves-effect waves-light btn-large orange" id="botao-jogue" href="principal.html">Jogue agora!</a>
 
-    <ul class=" center">
-      <li id="contador-caracteres">0 Caracteres</li>
-      <li id="contador-palavras">0 Palavras</li>
-    </ul>
-    <section class="placar">
-      <h3 class="center">Placar</h3>
-      <table class="centered bordered">
-        <thead>
-          <th>Nome</th>
-          <th>Num. de palavras</th>
-          <th>Remover</th>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
     </section>
-  </div>
+
     <script src="js/jquery.js"></script>
-    <script src="js/principal.js"></script>
-    <script src="js/placar.js"></script>
-    <script src="js/frase.js"></script>
+    <script src="slick-1.6.0/slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+
+
 </body>
 </html>
